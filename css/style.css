@@ -645,7 +645,7 @@ section {
    ============================================ */
 
 .projects {
-    background: linear-gradient(135deg, transparent, rgba(0, 96, 100, 0.05));
+    background: transparent;
 }
 
 .projects-grid {
@@ -669,11 +669,7 @@ section {
 }
 
 .project-image {
-    width: 100%;
-    height: 250px;
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    position: relative;
-    overflow: hidden;
+    display: none;
 }
 
 .project-image::before {
