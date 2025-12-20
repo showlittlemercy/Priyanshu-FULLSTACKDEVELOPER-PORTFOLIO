@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu - Full Stack Developer | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Priyanshu</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="resume.pdf" download class="resume-btn">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-word">Hi,</span>
+                    <span class="title-word">I'm</span>
+                    <span class="title-word highlight">Priyanshu</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & Data Enthusiast</p>
+                <p class="hero-description">
+                    Building scalable, production-grade applications with modern technologies. 
+                    Specializing in Next.js, TypeScript, and Cloud Solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <p>Full Stack Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Innovative Full Stack Developer</h3>
+                    <p>
+                        I'm a passionate full-stack developer specializing in building scalable, production-grade applications using 
+                        <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>Python</strong>. With proven expertise in architecting 
+                        secure systems with real-time capabilities and complex database schemas.
+                    </p>
+                    <p>
+                        My journey in tech has been driven by a desire to solve real-world problems through code. 
+                        I love integrating cloud solutions and generative AI to drive technical innovation and business value.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>25+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>2</h4>
+                            <p>Internships</p>
+                        </div>
+                        <div class="stat">
+                            <h4>10+</h4>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <i class="fas fa-location-dot"></i>
+                        <h4>Location</h4>
+                        <p>Bangalore, India</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Education</h4>
+                        <p>HKBK College of Engineering</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Current Role</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-target"></i>
+                        <h4>Specialization</h4>
+                        <p>Web & Cloud Architecture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Data Science Intern</h3>
+                        <p class="company">Corizo Edutech Pvt. Ltd</p>
+                        <p class="date">Nov 2025 - Dec 2025</p>
+                        <ul class="experience-list">
+                            <li>Conducted exploratory data analysis (EDA) and data preprocessing using Python (Pandas, NumPy)</li>
+                            <li>Developed and evaluated machine learning models using Scikit-learn</li>
+                            <li>Completed comprehensive capstone project with data visualization and statistical analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Web Development Intern</h3>
+                        <p class="company">Corizo Edutech Pvt. Ltd</p>
+                        <p class="date">Oct 2025 - Nov 2025</p>
+                        <ul class="experience-list">
+                            <li>Engineered responsive and scalable web components using modern JavaScript frameworks</li>
+                            <li>Collaborated with senior developers to improve UI performance</li>
+                            <li>Implemented real-world features based on agile requirements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image syndrome"></div>
+                    <div class="project-content">
+                        <h3>Syndrome</h3>
+                        <p class="tech-stack">React 18 • TypeScript • Supabase • Tailwind CSS</p>
+                        <p class="project-description">
+                            A scalable social media ecosystem with real-time messaging, live notifications, 
+                            and secure many-to-many relationships using PostgreSQL and Row Level Security.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://syndrome-iota.vercel.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/showlittlemercy/Syndrome" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image nirvana"></div>
+                    <div class="project-content">
+                        <h3>NIRVANA</h3>
+                        <p class="tech-stack">Next.js 14 • Clerk • Supabase • Tailwind CSS</p>
+                        <p class="project-description">
+                            Full-stack e-commerce platform featuring a custom admin dashboard, 
+                            inventory management, and role-based access control with secure checkout flow.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://nirvanaecommerce.vercel.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/showlittlemercy/NIRVANA" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image twist"></div>
+                    <div class="project-content">
+                        <h3>Twist</h3>
+                        <p class="tech-stack">Next.js 14 • Clerk • Supabase • PostgreSQL</p>
+                        <p class="project-description">
+                            Full-scale social media platform (Capstone Project) with Instagram-like functionalities, 
+                            secure authentication, and strict privacy controls using RLS.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://twist123.vercel.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/faris-sait/Twist123" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image daiser"></div>
+                    <div class="project-content">
+                        <h3>Daiser</h3>
+                        <p class="tech-stack">Next.js 14 • TypeScript • Supabase • React Query</p>
+                        <p class="project-description">
+                            Production-grade task management workspace with interactive Kanban board, 
+                            drag-and-drop capabilities, and real-time analytics visualization.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://daiser.vercel.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/showlittlemercy/DAISER" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft Azure</span>
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Clerk</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-lightbulb"></i> Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">DSA</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">RLS Security</span>
+                        <span class="skill-tag">Real-time Systems</span>
+                        <span class="skill-tag">Scalability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="certifications-grid">
+                <div class="cert-group">
+                    <h3><i class="fas fa-brain"></i> Data & Machine Learning</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Machine Learning (Python)</li>
+                        <li><i class="fas fa-check-circle"></i> Data Science & Algorithms (Python)</li>
+                        <li><i class="fas fa-check-circle"></i> Basics of DSA</li>
+                        <li><i class="fas fa-check-circle"></i> Hadoop Starter</li>
+                        <li><i class="fas fa-check-circle"></i> Business Analysis Basics</li>
+                    </ul>
+                </div>
+
+                <div class="cert-group">
+                    <h3><i class="fas fa-globe"></i> Web & Cloud</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Intro to Front End</li>
+                        <li><i class="fas fa-check-circle"></i> Intro to HTML</li>
+                        <li><i class="fas fa-check-circle"></i> Cloud Computing</li>
+                        <li><i class="fas fa-check-circle"></i> Azure Fundamentals</li>
+                        <li><i class="fas fa-check-circle"></i> AWS for Beginners</li>
+                    </ul>
+                </div>
+
+                <div class="cert-group">
+                    <h3><i class="fas fa-magic"></i> Generative AI</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Intro to GenAI Studio</li>
+                        <li><i class="fas fa-check-circle"></i> Intro to Generative AI</li>
+                    </ul>
+                </div>
+
+                <div class="cert-group">
+                    <h3><i class="fas fa-palette"></i> Design & Leadership</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> UI/UX Basics</li>
+                        <li><i class="fas fa-check-circle"></i> Intro to Graphic Design</li>
+                        <li><i class="fas fa-check-circle"></i> Digital Transformation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Leadership -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications & Leadership</h2>
+            <div class="pub-grid">
+                <div class="pub-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Published Research</h3>
+                    <p class="pub-title">"Cloud-Based Social Media Platforms: Architectures & Future Trends"</p>
+                    <p class="pub-venue">International Journal of IJISRT (2025)</p>
+                    <a href="https://ijisrt.com/assets/upload/files/IJISRT25MAY1223.pdf" target="_blank" class="pub-link">
+                        <i class="fas fa-file-pdf"></i> Open PDF
+                    </a>
+                </div>
+
+                <div class="pub-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <h3>Event Organizer</h3>
+                    <p class="pub-title">College Fest Management</p>
+                    <p class="pub-venue">2000+ Attendees</p>
+                    <p class="pub-desc">Managed logistics, budgeting, and team coordination for major college event</p>
+                </div>
+
+                <div class="pub-card">
+                    <div class="pub-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Student Delegate</h3>
+                    <p class="pub-title">Leadership Representative</p>
+                    <p class="pub-venue">Cross-Campus Initiatives</p>
+                    <p class="pub-desc">Represented college in leadership forums and supported student initiatives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm always open to new opportunities and interesting projects. Feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-location-dot"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bangalore, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9071048836</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:showlittlemercy@gmail.com">showlittlemercy@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/priyanshu-thakur-a47774360/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/showlittlemercy" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/showlittlemercy/" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://showlittlemercy.github.io/PRIYANSHU-PORTFOLIO/" target="_blank" class="social-icon">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xykgwkgp" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Priyanshu. All rights reserved.</p>
+                <p class="footer-text">Crafted with <i class="fas fa-heart"></i> by Priyanshu | Full Stack Developer</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
