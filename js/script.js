@@ -268,10 +268,21 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all animated elements
-document.querySelectorAll('.project-card, .skill-category, .cert-group, .pub-card, .info-card').forEach(el => {
+document.querySelectorAll('.skill-category, .cert-group, .pub-card, .info-card').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
 });
+
+const projectObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            projectObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.project-item').forEach(el => projectObserver.observe(el));
 
 // ============================================
 // SMOOTH SCROLL BEHAVIOR
