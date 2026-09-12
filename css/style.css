@@ -640,6 +640,48 @@ section {
     font-weight: bold;
 }
 
+.credential-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.credential-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: rgba(0, 96, 100, 0.08);
+    border: 1px solid rgba(0, 96, 100, 0.2);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .credential-links a {
+    background: rgba(0, 169, 181, 0.12);
+    border-color: rgba(0, 169, 181, 0.3);
+}
+
+.credential-links a:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   EDUCATION SECTION
+   ============================================ */
+
+.education {
+    background: linear-gradient(135deg, transparent, rgba(0, 96, 100, 0.05));
+}
+
 /* ============================================
    PROJECTS SECTION
    ============================================ */
@@ -683,7 +725,11 @@ section {
     animation: rotate 8s linear infinite;
 }
 
-.project-image.syndrome {
+.project-image.palettes {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.project-image.serji {
     background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
@@ -725,7 +771,8 @@ section {
 
 .project-links {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .project-link {
@@ -888,6 +935,19 @@ section {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 16px;
+}
+
+.cert-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+    transition: opacity 0.2s ease;
+}
+
+.cert-link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
 }
 
 /* ============================================
